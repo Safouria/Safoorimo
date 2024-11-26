@@ -13,6 +13,9 @@
     background-image: linear-gradient(180deg, rgba(0,0,0,0.7) 10%, transparent);
     z-index: 1;
 }
+
+
+
 .navbar-left{
     display: flex;
     align-items: center;
@@ -30,6 +33,13 @@
 .navbar-left ul > li{
     cursor: pointer;
 }
+.navbar-left ul > li:hover{
+    color: rgb(197, 197, 197);
+}
+
+
+
+
 .navbar-right{
     display: flex;
     align-items: center;
@@ -69,7 +79,6 @@
 .navbar .dropdown:hover{
     color: rgb(211, 211, 211);
 }
-
 .navbar.dropdown p{
     font-size: 13px;
     cursor: pointer;
@@ -78,7 +87,31 @@
     display: block;
 }
 
+
+
+
 .nav-dark{
     background-color: #2f2f2fb3;
 }
 
+
+@media (max-width:800px) {
+    .navbar{
+        padding: 20px 4%;
+    }
+    .navbar-left ul{
+        display: none;
+    }
+    .navbar-right img{
+        height: 25px;
+    }
+}
+
+@media (max-width:500px) {
+    .navbar-right img{
+        height: 20px;
+    }
+    .nav-right{
+        gap: 10px;
+    }
+}
