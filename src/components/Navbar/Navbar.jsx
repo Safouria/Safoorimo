@@ -5,6 +5,7 @@ import search_icon from '../../assets/search.svg'
 import bell_icon from '../../assets/bell.svg'
 import profile_img from '../../assets/profile.svg'
 import dropdown_icon from '../../assets/down.svg'
+import { Link } from 'react-router-dom'
 
 
 
@@ -42,7 +43,7 @@ const Navbar = () => {
         <div className="navbar-profile">
           <img src={profile_img} alt="" className='profile' />
           <img src={dropdown_icon} alt="" />
-          <div className="dropdown"> Sign out of Netflix</div>
+          <Link to={`/login`} className="dropdown"> Sign out of Netflix</Link>
         </div>
 
      </div>
