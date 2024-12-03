@@ -36,7 +36,13 @@
 .navbar-left ul > li:hover{
     color: rgb(197, 197, 197);
 }
-
+.navbar-left .nav-color{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-left .nav-color:hover{
+    color: rgb(197, 197, 197);
+}
 
 
 
@@ -49,6 +55,74 @@
     width: 20px;
     cursor: pointer;
 }
+
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    
+    position: relative;
+}
+.search-input{
+    width: 0px;
+
+    background-color: #434343b3;
+    color: #fff;
+
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+
+    z-index: 1;
+}
+.search-bar:hover .search-input{
+    display: block;
+    
+    width: 300px;
+    height: 30px;
+    
+    position: absolute;
+    transform: translateX(-300px);
+}
+
+
+
+.hamburger{
+    display: none;
+    position: relative;
+}
+.hamburger:hover .children{
+    display: block;
+}
+.children{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    width: 400px;
+
+    border-radius: 4px;
+    background-color: #161616b3;
+    color: #fff;
+
+    display: none;
+}
+.children ul{
+    list-style: none;
+    margin: 20px;
+}
+.children ul li{
+    margin: 10px;
+
+    cursor: pointer;
+}
+.children ul li:hover{
+    color: rgb(197, 197, 197);
+}
+
 .navbar-right .profile{
     border-radius: 4px;
     width: 30px;
@@ -57,6 +131,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+
     cursor: pointer;
     position: relative;
 }
@@ -104,6 +179,9 @@
     }
     .navbar-right img{
         height: 25px;
+    }
+    .hamburger{
+        display: block;
     }
 }
 
