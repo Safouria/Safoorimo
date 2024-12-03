@@ -1,0 +1,25 @@
+.P-Sidebar{
+    background-color: rgb(8, 8, 8);
+    width: 50%;
+    height: fit-content;
+
+    padding: 10px 12px;
+    border-radius: 4px;
+}
+.P-Sidebar img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.shortcut-links p{
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.P-Sidebar hr{
+    border: 0;
+    width: 95%;
+    height: 1px;
+    background: #838383;
+}

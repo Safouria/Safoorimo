@@ -1,0 +1,26 @@
+.reviews{
+    width: 94%;
+    height: auto;
+
+    margin-top: 100px;
+
+    padding: 20px;
+    border-radius: 4px;
+
+    background-color: #393939b3;
+}
+.reviews h2{
+    font-size: 26px;
+    font-weight: 500;
+}
+.people{
+    display: flex;
+    gap: 20px;
+
+    width: 90%;
+}
+.people img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}

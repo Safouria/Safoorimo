@@ -10,8 +10,6 @@ import card7 from '../../assets/cards/card 7.png';
 import card8 from '../../assets/cards/card 8.jpg';
 import card9 from '../../assets/cards/card 9.webp';
 import card10 from '../../assets/cards/card 10.jpg';
-import card11 from '../../assets/cards/card 11.jpg';
-import card12 from '../../assets/cards/card 12.jpg';
 
 
 

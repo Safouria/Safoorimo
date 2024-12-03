@@ -1,20 +1,21 @@
+.player{
+    width: 100%;
+    height: 100vh;
 
-.back-arrow{
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 40px;
-    cursor: pointer;
-}
-
-iframe{
-    margin-top: 10px;
-    border-radius: 8px;
-}
-
-.player-info{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
+    padding-left: 15%;
+    padding-right: 15%;
+
+    position: absolute;
+    top: 75%;
+
+}
+
+
+.poster{    
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    mask-image: linear-gradient(to top, transparent, #000 75%);
+    -webkit-mask-image: linear-gradient(to top, transparent, #000 75%);
 }
