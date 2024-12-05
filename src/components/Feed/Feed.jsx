@@ -27,7 +27,7 @@ const Feed = () => {
         {apiData.map((card, index)=>{
 
          return <Link to={`/player/${card.id}`} className="card" key={index}>
-             <img src={`https://image.tmdb.org/t/p/w500` + card.backdrop_path} alt="" />
+             <img src={`https://image.tmdb.org/t/p/w500` + card.backdrop_path} alt=""/>
              <h2>{card.original_title}</h2>
              <h3>{card.overview.slice(0,71)} ...</h3>
              <p>{card.release_date.slice(0,4)} &bull; {card.vote_average} Vote average </p>

@@ -1,6 +1,6 @@
 import React, { Children, useEffect, useRef } from 'react'
 import './Navbar.css'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/safourimo 3.svg'
 import search_icon from '../../assets/search.svg'
 import bell_icon from '../../assets/bell.svg'
 import profile_img from '../../assets/profile.svg'
@@ -29,9 +29,9 @@ const Navbar = () => {
       <img src={logo} alt=""/></a>
         <ul>
             <Link to={`/`} className='nav-color'>Home</Link>
-            <Link to={`/video/:categoryId/:videoId`} className='nav-color'>TV Shows</Link>
-            <Link to={`/video/:categoryId/:videoId`} className='nav-color'>Movies</Link>
-            <Link to={`/video/:categoryId/:videoId`} className='nav-color'>New & Popular</Link>
+            <Link to={`/movie/:categoryId/:movieId`} className='nav-color'>TV Shows</Link>
+            <Link to={`/movie/:categoryId/:movieId`} className='nav-color'>Movies</Link>
+            <Link to={`/movie/:categoryId/:movieId`} className='nav-color'>New & Popular</Link>
             <li>My List</li>
             <li>Browse by Language</li>
         </ul>

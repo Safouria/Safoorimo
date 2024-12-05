@@ -22,6 +22,9 @@
 .cards-list .card{
     position: relative;
 }
+.cards-list .card:hover{
+    border: 1px solid red;
+}
 .cards-list .card p{
     position: absolute;
     bottom: 10px;

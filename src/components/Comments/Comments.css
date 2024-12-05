@@ -1,30 +1,45 @@
 
 .comment{
     display: flex;
-    align-items: center;
-    margin: 20px 0;
+    flex-direction: column;
+    margin-top: 30px;
 }
 .comment img{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
     margin-right: 15px;
 }
 .comment h3{
     font-size: 14px;
-    margin-bottom: 2px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+h4{
+    color: #c6c6c6;
+}
+.comment p{
+    width: 100%;
+}
+.comment .devider{
+    border: 0;
+    height: 1px;
+    width: 30%;
+    color: red;
 }
 .comment h3 span{
     font-size: 12px;
     font-weight: 300;
-    color: #5a5a5a;
+    color: #e2e2e2;
     margin-left: 8px;
 }
+
+
 
 .comment-action{
     display: flex;
     align-items: center;
-    margin: 8px 0;
+    margin-bottom: 40px;
     font-size: 14px;
 }
 .comment-action img{
@@ -34,5 +49,13 @@
 }
 .comment-action span{
     margin-right: 20px;
-    color: #5a5a5a;
+    color: #a3a3a3;
+}
+.comment-action hr{
+    margin-left: 80px;
+    border: 0;
+    outline: 0;
+    height: 1px;
+    width: 40%;
+    color: rgb(134, 134, 134);
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Login.css'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/safourimo 3.svg'
 
 const Login = () => {
 

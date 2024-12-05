@@ -1,14 +1,17 @@
-import React from 'react'
-import './Video.css'
+import './Movie.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import Feed from '../../components/Feed/Feed'
+import { useState } from 'react'
 
-const Video = () => {
+const Movie = () => {
+  const [category, setCategory] = useState([]);
+
+
   return (
-    <div className='video'>
+    <div className='movie'>
        <Navbar />
-       <Sidebar/>
+       <Sidebar category={category} setCategory={setCategory}/>
       <div className="container">
         <Feed />
       </div>
@@ -17,4 +20,4 @@ const Video = () => {
   )
 }
 
-export default Video
+export default Movie

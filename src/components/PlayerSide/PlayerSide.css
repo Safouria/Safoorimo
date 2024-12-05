@@ -1,6 +1,6 @@
 .P-Sidebar{
     background-color: rgb(8, 8, 8);
-    width: 50%;
+    width: 40%;
     height: fit-content;
 
     padding: 10px 12px;
@@ -11,13 +11,20 @@
     cursor: pointer;
 }
 
+
 .shortcut-links p{
     text-align: center;
     margin: 20px;
     cursor: pointer;
 }
+.shortcut-links p:hover{
+    text-decoration: underline;
+    color: #c6c6c6;
+}
 
-.P-Sidebar hr{
+
+hr{
+    margin-top: 30px;
     border: 0;
     width: 95%;
     height: 1px;

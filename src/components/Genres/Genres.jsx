@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import './Sidebar.css'
-import { Link } from 'react-router-dom';
+import './Genres.css'
+import { useParams } from 'react-router-dom';
 
+const Genres = () => {
 
-
-const Sidebar = () => {
-
-  const [apiData, setApiData] = useState([]);
+  const {id} = useParams();
+  const [genresApi, setGenresApi] = useState([]);
 
   const options = {
     method: 'GET',
@@ -16,27 +15,25 @@ const Sidebar = () => {
     }
   };
   
-  fetch('https://api.themoviedb.org/3/genre/movie/list?language=en', options)
+  fetch(`https://api.themoviedb.org/3/movie/${id?id:912649}?language=en-US`, options)
     .then(res => res.json())
-    .then(res => setApiData(res.genres))
+    .then(res => setGenresApi(res.genres))
     .catch(err => console.error(err));
 
 
   return (
-    <div className='Sidebar'>
+    <div className='genres'>
       <div className="shortcut-links">
-        <div className="side-link">
-         {apiData.map((card, index)=>{
-
-         return<p>{card.name}</p>
-
-         })}
-         <hr/>
-         
-        </div>
+        <p className='movie-genres'>Movie Genre:</p>
+        {genresApi.map((card)=>{
+          return <p className='genres-link'>{card.name}</p>
+        })}
+       
+        <hr/>
       </div>
     </div>
   )
 }
 
-export default Sidebar
+export default Genres
+ 
