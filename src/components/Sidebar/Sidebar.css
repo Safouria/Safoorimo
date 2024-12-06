@@ -1,18 +1,14 @@
 .Sidebar{
-    background-color: #636363;
+    background-color: #313131;
     width: 15%;
     height: 100vh;
 
     position: fixed;
     top: 0;
-    padding-left: 2%;
+    padding-left: 3%;
     padding-top: 100px;
 }
 
-.shortcut-links img{
-    width: 20px;
-    margin-right: 20px;
-}
 
 .side-link{
     display: flex;
@@ -23,21 +19,25 @@
 
     cursor: pointer;
 }
-
-.Sidebar hr{
+.side-link p{
+    color: #fff;
+    
+    font-size: 14px;
+    margin:  7px 4px;
+}
+.genreLink{
+    text-decoration: none;
+    color: #fff;
+}
+.side-link hr{
+    margin-top: 0;
     border: 0;
-    width: 85%;
+    width: 50%;
     height: 1px;
-    background: #ccc;
+    background: #888787;
 }
-
-.subscribed-list h3{
-    font-size: 13px;
-    margin: 20px 0;
-    color: #eceaea;
-}
-.subscribed-list img{
-    width: 25px;
-    border-radius: 50%;
-    margin-right: 20px;
+.side-link h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: #9d9d9d;
 }

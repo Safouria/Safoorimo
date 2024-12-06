@@ -34,7 +34,7 @@ const PlayerSide = () => {
   return (
     <div className='P-Sidebar'>
      <img src={`https://image.tmdb.org/t/p/w500${sideApi.poster_path}`} alt="" />
-     <hr/>
+
      <div className="shortcut-links">
       < Genres />
        </div>

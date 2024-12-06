@@ -28,12 +28,9 @@ const Navbar = () => {
       <a href="/">
       <img src={logo} alt=""/></a>
         <ul>
-            <Link to={`/`} className='nav-color'>Home</Link>
             <Link to={`/movie/:categoryId/:movieId`} className='nav-color'>TV Shows</Link>
             <Link to={`/movie/:categoryId/:movieId`} className='nav-color'>Movies</Link>
             <Link to={`/movie/:categoryId/:movieId`} className='nav-color'>New & Popular</Link>
-            <li>My List</li>
-            <li>Browse by Language</li>
         </ul>
      </div>
 

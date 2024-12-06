@@ -26,12 +26,16 @@ const Sidebar = () => {
     <div className='Sidebar'>
       <div className="shortcut-links">
         <div className="side-link">
+          <h3>Genres</h3>
+          <hr/>
          {apiData.map((card, index)=>{
 
-         return<p>{card.name}</p>
+         return<Link to={`/movie/:categoryId/:movieId`} className="genreLink" key={index}>
+          <p>{card.name}</p>
+         </Link>
 
          })}
-         <hr/>
+          <hr/>
          
         </div>
       </div>

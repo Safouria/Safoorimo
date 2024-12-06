@@ -24,12 +24,11 @@ const Genres = () => {
   return (
     <div className='genres'>
       <div className="shortcut-links">
-        <p className='movie-genres'>Movie Genre:</p>
+        <span className='movie-genres'>Movie Genre:</span>
         {genresApi.map((card)=>{
           return <p className='genres-link'>{card.name}</p>
         })}
-       
-        <hr/>
+            <hr/>
       </div>
     </div>
   )
