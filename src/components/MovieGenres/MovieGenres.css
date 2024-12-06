@@ -1,0 +1,25 @@
+
+.shortcut-links .genres-link{
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+}
+.shortcut-links .genres-link:hover{
+    text-decoration: underline;
+    color: #c6c6c6;
+}
+
+.movie-genres{
+    color: #c6c6c6;
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-left: 70px;
+}
+
+.genres-link{
+    text-decoration: none;
+}
+.genres-link p{
+    color: #fff;
+    margin: 2px 0;
+}

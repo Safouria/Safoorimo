@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './PlayerSide.css'
 import { useParams } from 'react-router-dom';
-import Genres from '../Genres/Genres';
+import MovieGenres from '../MovieGenres/MovieGenres'
 
 const PlayerSide = () => {
 
@@ -36,7 +36,7 @@ const PlayerSide = () => {
      <img src={`https://image.tmdb.org/t/p/w500${sideApi.poster_path}`} alt="" />
 
      <div className="shortcut-links">
-      < Genres />
+      < MovieGenres />
        </div>
   </div>
   )

@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import './Feed.css'
 
-import { Link } from 'react-router-dom';
-
+import { Link, useParams } from 'react-router-dom';
 
 const Feed = () => {
 
     const [apiData, setApiData] = useState([]);
+    const {id} = useParams();
 
     const options = {
         method: 'GET',
@@ -20,11 +20,15 @@ const Feed = () => {
         .then(res => res.json())
         .then(res => setApiData(res.results))
         .catch(err => console.error(err));
+
+
+
   return (
    <>
-     <h1 className='title' >Movies</h1>
+   <h1 className='title' >{id || 'Movies'}</h1>
      <div className='feed'>
         {apiData.map((card, index)=>{
+
 
          return <Link to={`/player/${card.id}`} className="card" key={index}>
              <img src={`https://image.tmdb.org/t/p/w500` + card.backdrop_path} alt=""/>
@@ -34,6 +38,7 @@ const Feed = () => {
          </Link>
         })}
      </div>
+
    </>
   )
 }

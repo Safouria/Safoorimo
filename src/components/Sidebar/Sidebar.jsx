@@ -30,7 +30,9 @@ const Sidebar = () => {
           <hr/>
          {apiData.map((card, index)=>{
 
-         return<Link to={`/movie/:categoryId/:movieId`} className="genreLink" key={index}>
+          let categoryId = card.id;
+
+         return<Link to={`/movie/${categoryId}/:movieId`} className="genreLink" key={index}>
           <p>{card.name}</p>
          </Link>
 
