@@ -34,6 +34,7 @@ const MovieGenres = () => {
       </div>
     </div>
   )
+  
 }
 
 export default MovieGenres
