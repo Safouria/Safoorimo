@@ -30,3 +30,9 @@ hr{
     height: 1px;
     background: #838383;
 }
+
+@media (max-width: 500px) {  
+    .P-Sidebar{
+        display: none;
+    } 
+}

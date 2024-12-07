@@ -122,6 +122,9 @@
 .children ul li:hover{
     color: rgb(197, 197, 197);
 }
+.on{
+    display: inline;
+}
 
 .navbar-right .profile{
     border-radius: 4px;

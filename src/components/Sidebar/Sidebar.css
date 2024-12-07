@@ -41,3 +41,19 @@
     font-weight: 500;
     color: #9d9d9d;
 }
+
+@media (max-width: 800px) {
+    .side-link p{
+        font-size: 10px;
+        margin-top:  7px ;
+        margin-left: -12px;
+    }
+}
+@media (max-width: 500px) {
+    .Sidebar{
+        width: 2%;
+    }
+    .side-link{
+        display: none;
+    }
+}

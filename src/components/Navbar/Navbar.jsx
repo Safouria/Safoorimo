@@ -39,17 +39,17 @@ const Navbar = () => {
         <input type="text" placeholder='Search' className='search-input'/>
         <img src={search_icon} alt="" className='icons'/>
         </div>
-        <img src={Hamburger_icon} alt="" className='icons hamburger'/>
-        <div className="children">
+        <img src={Hamburger_icon} alt="" className='icons hamburger' onClick={()=>{
+          const hamber = document.querySelector("children");
+          hamber.classList.add("on");
+        }} />
+        <div className="children ">
            <ul>
             <li>Child 1</li>
             <li>Child 2</li>
             <li>Child 3</li>
             <li>Child 4</li>
             <li>Child 5</li>
-            <li>Child 6</li>
-            <li>Child 7</li>
-            <li>Child 8</li>
 
            </ul>
         </div>

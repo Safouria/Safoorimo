@@ -44,3 +44,12 @@ iframe{
     margin: 20px 0;
     background: #838383;
 }
+
+@media (max-width: 500px) {  
+    .player-main{
+        margin-top: 0;
+    }
+    .player-info{
+        display: none
+    }
+}

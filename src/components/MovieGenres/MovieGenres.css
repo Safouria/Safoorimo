@@ -1,7 +1,7 @@
 
 .shortcut-links .genres-link{
     text-align: center;
-    margin: 20px;
+    margin: 20px 4px;
     cursor: pointer;
 }
 .shortcut-links .genres-link:hover{
@@ -13,7 +13,7 @@
     color: #c6c6c6;
     font-size: 20px;
     padding-bottom: 30px;
-    padding-left: 70px;
+    padding-left: 100px;
 }
 
 .genres-link{
@@ -22,4 +22,10 @@
 .genres-link p{
     color: #fff;
     margin: 2px 0;
+}
+
+@media (max-width: 800px) {
+    .movie-genres{
+        padding-left: 30px;
+    }
 }
