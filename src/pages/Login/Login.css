@@ -92,6 +92,13 @@
     cursor: pointer;
 }
 
+
+.error {
+    color: red;
+    font-size: 12px;
+  }
+  
+
 @media (max-width: 500px) {
     .login{
         padding: 15px 5%;
